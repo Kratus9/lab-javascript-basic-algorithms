@@ -5,7 +5,7 @@ let hacker1 = "Manolito"
 console.log("The driver's name is " + hacker1)
 
 let hacker2 = "Pepito"
-console.log("The navigator's name is " + hacker2)
+console.log(`The navigator's name is ${hacker2}`)
 
 // Iteration 2: Conditionals
 
@@ -25,7 +25,7 @@ let capsSpaced = ""
 for (let i = 0; i < hacker1.length; i++) {
     capsSpaced += hacker1[i].toUpperCase() + " " 
 }
-console.log(capsSpaced)
+console.log(capsSpaced.trim())
 
 let capsSpacedReversed = ""
 for (let i = hacker1.length -1; i >= 0; i--) {
@@ -33,12 +33,12 @@ for (let i = hacker1.length -1; i >= 0; i--) {
 }
 console.log(capsSpacedReversed)
 
-if (hacker1[0] < hacker2[0]) {
+if (hacker1 < hacker2) {
     console.log("The driver's name goes first.")
 }
-else if (hacker1[0] > hacker2[0]) {
+else if (hacker1 > hacker2) {
     console.log("Yo, the navigator goes first definitely.")
 }
-else if (hacker1[0] === hacker2[0]) {
+else if (hacker1 === hacker2) {
     console.log("What?! You both have the same name?")
 }
